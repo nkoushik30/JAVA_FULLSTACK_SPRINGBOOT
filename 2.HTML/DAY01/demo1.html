@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript program</title>
+    <body>
+        <h1>My First JavaScript Program</h1>
+        <p id="result"></p>
+        <script>
+            // leap year or not
+        let year=2020; 
+        let isLeap=false;
+        if((year%4==0 && year%100!=0) || (year%400==0)){
+            isLeap=true;
+        }
+        document.getElementById("result").innerHTML = year+" is leap year: "+isLeap;
+        </script>
+
+</body>
+</head>
+</html>

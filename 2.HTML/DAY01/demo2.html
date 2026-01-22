@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript program</title>
+    <script>
+       
+    </script>
+    <body>
+        <h1>My First JavaScript Program</h1>
+        <p id="result"></p>
+        <script>
+                //greatest of three nums
+        let a=1;
+        var b=9;
+        const c=22228;
+        let max=a;
+        if(b>max){
+            max=b;
+        }
+        if(c>max){
+            max=c;
+        } 
+        document.getElementById("result").innerHTML = "number " +max+" is greatest among "+a+", "+b+" and "+c;
+
+        //number is divisible by 3 display "fizz", 
+        // if num is divisible by 5 display "buzz", if num is divisible by both 3 and 5 display "fizzbuzz"
+        let num=10;
+        let fizzbuzz="";
+        if(num%3==0){
+            fizzbuzz="fizz";
+        }
+        if(num%5==0){
+            fizzbuzz+="buzz";
+        }
+        document.getElementById("result").innerHTML = " "+fizzbuzz+"<br>";
+
+        </script>
+
+</body>
+</head>
+</html>

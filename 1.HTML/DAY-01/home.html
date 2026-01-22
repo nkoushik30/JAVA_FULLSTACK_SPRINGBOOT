@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home - My Website</title>
+    
+</head>
+<body>
+    <header style="text-align: center;">
+        <div class="logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <div class="brand">Home page</div>
+        </div>
+        <nav aria-label="Main navigation">
+            <a href="#" aria-current="page">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <footer>
+        © <span id="year"></span> My Website — <a href="#" style="color:inherit;text-decoration:underline">Privacy</a>
+    </footer>
+
+    <script>
+        // Small script: set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

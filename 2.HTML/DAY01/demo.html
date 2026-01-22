@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript program</title>
+    <script>
+            let a=10;
+            var b=9;
+            const c=8;
+           // alert("Hello World");
+            //alert(a+b+c);
+            //sum of individual digits
+            function sumOfDigits(num){
+                let sum=0;
+                while(num>0){
+                    let digit=num%10;
+                    sum+=digit;
+                    num=Math.floor(num/10);
+                }
+                return sum;
+            }
+            let num1=10;
+            let num2=10;
+            
+            (++num2);
+            (++num1);
+            num2=num1;
+            num1++;
+            num2+=num1;
+            alert(num2)
+            //swaping of two numbers without temp and assignment operator
+            let x=5;
+            let y=10;
+
+    </script>
+    <body>
+        <h1>My First JavaScript Program</h1>
+        <p id="result"></p>
+        <script>
+            document.getElementById("result").innerHTML = "sum of individual digits = "+sumOfDigits(25);
+        </script>
+</body>
+</head>
+</html>
