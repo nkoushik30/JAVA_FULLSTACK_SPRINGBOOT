@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Demo</title>
+    <script>
+        // Function to calculate the square of a number
+     //   function square(num) {
+       //     document.getElementById("result").innerHTML = num * num;
+        //}
+        //function to greet user
+        //function greetUser() {
+            //let name = document.getElementById("nameInput").value;
+          //  alert("Hello, " + name + "! Welcome to JavaScript Functions Demo.");
+        //}
+        //prime number check function
+        function isPrime() {
+            let num = parseInt(document.getElementById("nameInput").value);
+
+            if (num <= 1) return document.getElementById("result").innerHTML = num + " is not a prime number.";
+            for (let i = 2; i <num; i++) {
+                if (num % i === 0) return document.getElementById("result").innerHTML = num + " is not a prime number.";
+            }       
+            return document.getElementById("result").innerHTML = num + " is a prime number.";
+
+        }
+    </script>
+    <body>
+        enter a number :<input type="text" id="nameInput"/>
+        <button onclick="isPrime()">Check if Prime</button>
+
+       <!-- <button onclick="greetUser()">Greet Me</button>
+ -->       <h1>JavaScript Functions Demo</h1>
+        <p id="result"></p>
+        <script>
+        </script>
+</body>
+</head>
+</html>

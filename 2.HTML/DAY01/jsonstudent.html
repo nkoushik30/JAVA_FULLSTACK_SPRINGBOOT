@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <script> 
+        function myfun() {
+            let students = [
+                {name: "Alice", age: 20, grade: "A"},
+                {name: "Bob", age: 22, grade: "B"},
+                {name: "Charlie", age: 21, grade: "A"},
+                {name: "David", age: 23, grade: "C"}
+            ];
+            //write your code
+            let result = "";
+            result+="<table border='2'>";
+            result+="<tr>";
+            result+="<th>Name</th>";
+            result+="<th>age</th>";
+            result+="<th>grade</th>";
+            result+="</tr>";
+            for(let i in students){
+                result+="<tr>";
+                result+="<td>"+students[i].name+"</td>";
+                result+="<td>"+students[i].age+"</td>";
+                result+="<td>"+students[i].grade+"</td>";
+                result+="</tr>";
+            }
+            document.getElementById("result").innerHTML = result;
+        }       
+    </script> 
+</head>
+<body>    
+    <button onclick="myfun()">Click Me</button> <br/>
+    <h1 id="result"></h1>
+</body>
+</html>

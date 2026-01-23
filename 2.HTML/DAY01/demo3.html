@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first javascript program</title>
+    <script>
+       
+    </script>
+    <body>
+        <h1>My First JavaScript Program</h1>
+        <p id="result"></p>
+        <script>
+        //arrays demo of javascript
+        let arr = [10,20,30,40,50]
+        let result = "Array elements are: ";
+        let n=arr.length;
+       // for(let i=0;i<n;i++){
+         //   result += arr[i] + "  : ";
+        //}
+        // for each loop 1111
+        arr.forEach(function(element){
+        result += element + "  : "; 
+        });
+                // for each loop 2222
+
+        // for(let i in arr){
+        //     result += arr[i] + "  : ";
+        // }
+        document.getElementById("result").innerHTML = result;
+        </script>
+
+</body>
+</head>
+</html>

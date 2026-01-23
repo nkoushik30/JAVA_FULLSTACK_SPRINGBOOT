@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <script> 
+        function checkPrime(num) {
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0)
+                    return false;
+            }
+            return true;
+        }
+
+        function myfun() {
+            let start = document.getElementById("start").value;
+            let end = document.getElementById("end").value;
+            let result = "";
+            let i = 1;
+            end-=1; // to avoid boundary case
+            for (i = start; i <end; i++) {
+                if (checkPrime(i) && checkPrime(i + 2)) {
+                    result += "(" + i + ", " + (i + 2) + ") <br/>";
+                }
+            }
+                      
+            document.getElementById("result").innerHTML = result;
+        }       
+    </script> 
+</head>
+<body>    
+    Enter a Start Value: <input type="text" id="start" /> <br/>
+    Enter a End Value:   <input type="text" id="end"   /> <br/>
+
+    <button onclick="myfun()">Click Me</button> <br/>
+    <h1 id="result"></h1>
+</body>
+</html>
