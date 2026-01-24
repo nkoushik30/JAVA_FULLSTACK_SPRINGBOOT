@@ -1,7 +1,0 @@
-git config --local user.name "Koushik Git-Lab Nelluri"
-git config --local user.email "koushiknelluri827@gmail.com"
-git init --initial-branch=main --object-format=sha1
-git remote add origin https://gitlab.com/nkoushik30/java_fullstack_springboot.git
-git add .
-git commit -m "Initial commit"
-git push --set-upstream origin main

@@ -1,5 +1,4 @@
-
-
 git remote add origin https://github.com/nkoushik30/JAVA_FULLSTACK_SPRINGBOOT.git
-git branch -M main
+git add .
+git commit " day 4 wrote functions for products, and developed credentials for the users, logins"
 git push -u origin main
