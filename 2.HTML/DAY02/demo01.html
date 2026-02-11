@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register page</title>
+    <!--bootstrap cdn link -->
+    <script>
+        function getUserName(){
+            let firstname=document.getElementById("firstname").value;
+            let lastname=document.getElementById("lastname").value;
+            let result = document.getElementById("result");
+            result.innerHTML = "Welcome !! " + firstname.charAt(0) + "." + lastname;
+    }
+    </script>
+</head>
+<body>
+    
+    <h2 style="text-align: center;">User page</h2>
+    <form style="max-width: 500px; margin: 20px auto;">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" name="firstname" id="firstname" class="form-control" placeholder="firstname" required>
+            </div>
+        </div>
+        <br/>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="lastname" required>
+            </div>
+        </div>
+        <br/>
+        <div class="form-group" style="text-align: center;">
+            <button onclick="getUserName()" type="button" class="btn btn-primary">Get user details</button>
+            <h1 id="result"></h1>
+        </div>
+    </form>
+</body>
+</html>
