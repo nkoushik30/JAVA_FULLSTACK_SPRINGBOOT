@@ -1,0 +1,19 @@
+INDEX VERSION 1.130+C:\VIT\GIT\3.java\.metadata\.plugins\org.eclipse.jdt.core
+381632686.index
+711575835.index
+938423121.index
+380975345.index
+1465017201.index
+1965305276.index
+2509240541.index
+2694498956.index
+4120887138.index
+20434132.index
+1508645799.index
+2353665961.index
+1818204423.index
+2085312923.index
+92046273.index
+3031530093.index
+2568339729.index
+3998368550.index
